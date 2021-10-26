@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Monkey Survey</title>
+</head>
+<style>
+    .main {
+  background-color: #09a7a1;
+}
+#one {
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  font-size: x-large;
+  text-align: center;
+  color: #f7f6f5;
+  padding: 5px, 0px, 0px, 0px;
+}
+legend {
+  font-size: larger;
+}
+p {
+  font-size: large;
+}
+#two {
+  text-align: end;
+  color: #f7f6f5;
+}
+#start {
+  background-color: white;
+  color: #ff790e;
+}
+@keyframes start {
+  0% {
+    opacity: 0;
+  }
+  25% {
+    opacity: 0.25;
+  }
+  50% {
+    opacity: 0.5;
+  }
+  75% {
+    opacity: 0.75;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+ul li {
+  list-style-type: none;
+  display: inline;
+  text-transform: uppercase;
+  padding: 5px;
+  box-shadow: 5px 0px 0px #09a7a1;
+}
+#five {
+  color: #ff790e;
+  animation: start 3s infinite ease;
+}
+#text {
+  font-size: 30px;
+  justify-content: center;
+  text-size-adjust: 30px;
+}
+button {
+  color: #f7f6f5;
+  border: 0px;
+  font-size: large;
+  background-color: #ff790e;
+  box-shadow: 2px 0px 2px rgb(252, 252, 252);
+}
+#shape {
+  background-color: #ff790e;
+  width: 100px;
+  height: 70px;
+
+  left: 20px;
+  position: relative;
+}
+a {
+  text-decoration-line: none;
+  color: #ff790e;
+}
+#shape::before {
+  content: "";
+  background-color: #f7f6f5;
+  border-radius: 50%;
+  width: 100px;
+  height: 70px;
+  top: -25px;
+  left: -25px;
+  position: absolute;
+}
+@media screen and (min-width: 576px) {
+  body {
+    background-color: #ff790e;
+  }
+  #one {
+    box-shadow: 0px 2px 2px #ff790e;
+  }
+  button {
+    background-color: white;
+    color: black;
+    box-shadow: 2px 0px 2px #ff790e;
+  }
+}
+
+</style>
+<body>
+    <div class="main">
+     <div id="one">
+       <h1> Welcome to school</h1>
+    </div>
+       <div id="two">
+           <span ><p id="shape"></p></span>
+       <h4>Contact Us:
+           <span>
+       08034506031,
+       09036306032,
+       07044509071</span></h4>
+       </div>
+    <div id="start">
+        <ul>
+            <li><a href="" target="_blank" id="five">Registration</a></li>
+           <li><a href="#" id="five">Portal</a></li>
+            <li><a href="#" id="five">online Classes</a></li>
+
+        </ul>
+
+    </div>
+    <div id="begin">
+       <h2> Registration for JSS1-SSS3</h2>
+       <form action="https:www.google.com" target="_blank">
+           <input  id="radio" type="text" placeholder="Surname:" required id="text">
+           <input id="radio" type="text" placeholder="Firstname:" required id="text"><br>
+           <input id="radio" type="text" placeholder="Lastname:" required id="text">
+           <input id="radio" type="text" placeholder="DOB:" required id="text"><br>
+           <input id="radio" type="text" placeholder="Name of parent:" required id="text">
+           <input id="radio" type="text" placeholder="Phone no of parent:" required id="text"><br>
+           <input id="radio" type="text" placeholder="Occupation of parent:" required id="text">
+           <input id="radio" type="text" placeholder="Class teacher:" required id="text">
+           <h3>indicate by selecting the right option</h3>
+           <fieldset>
+               <legend>Pick the correct option</legend>
+           <p>Paid school fees:</p>
+           <label for="yes">Yes
+           <input type="radio" name="yes-no-half" id="yes" value="yes">
+           </label>
+           <label for="No">No
+           <input type="radio" name="yes-no-half" id="no" value="no">
+           </label>
+           <label for="half">Half
+           <input type="radio" name="yes-no-half" id="half" value="half" >
+           </label>
+           <p>Gender:</p>
+           <label for="male">Male
+           <input type="radio" name="Male-Female" id="Male" value="male">
+           </label>
+           <label for="Female">Female
+           <input type="radio" name="Male-Female" id="female" value="female">
+           </label>
+           </fieldset><br>
+           <fieldset>
+                   <legend>choose the right option in each categories</legend>
+           <p>Categories of JSS:</p>
+           <label for="Jss1">JSS1
+           <input type="radio" name="JSS1-JSS2-Jss3" id="Jss1" value="Jss1">
+           </label>
+           <label for="Jss2">JSS2
+           <input type="radio" name="JSS1-JSS2-Jss3" id="Jss2" value="Jss2">
+           </label>
+           <label for="Jss3">JSS3
+           <input type="radio" name="JSS1-JSS2-Jss3" id="Jss3" value="Jss3">
+           </label>
+           <p>Categories of SSS:</p>
+           <label for="Sss1">SSS1
+           <input type="radio" name="SSS1-SSS2-SSS3" id="Sss1" value="Sss1">
+           </label>
+           <label for="Jss2">SSS2
+           <input type="radio" name="SSS1-SSS2-SSS3" id="Sss2" value="Sss2">
+           </label>
+           <label for="Jss3">SSS3
+           <input type="radio" name="SSS1-SSS2-SSS3" id="Sss3" value="Sss3">
+           </label>
+           </fieldset>
+           <h2>Select the categories of subjects offered</h2>
+           <label>Mathematics
+           <input type="checkbox" name="mathematics" value="mathematics">
+           </label>
+           <label>English
+           <input type="checkbox" name="English" value="English">
+           </label>
+           <label>Civic Education
+           <input type="checkbox" name="Civic Education" value="Civic Education">
+           </label>
+           <label>Basic Science
+           <input type="checkbox" name="Basic Science" value="Basic Science"><br>
+           </label>
+           <label>Technical Drawing
+           <input type="checkbox" name="Technical Drawing" value="Technical Drawing">
+           </label>
+           <label>Social studies
+           <input type="checkbox" name="Social studies" value="Social studies">
+           </label>
+           <label>Introtech
+           <input type="checkbox" name="Introtech" value="Introtech">
+           </label>
+           <label>Bussiness Studies
+           <input type="checkbox" name="Bussiness Studies" value="Bussiness Studies"><br>
+           </label>
+           <label>Chemistry
+           <input type="checkbox" name="Chemistry" value="Chemistry">
+           </label>
+           <label>Geography
+           <input type="checkbox" name="Geography" value="Geography">
+           </label>
+           <label>Agric Science
+           <input type="checkbox" name="Agric Science" value="Agric Science">
+           </label>
+           <label>Biology
+           <input type="checkbox" name="Biology" value="Biology"><br>
+           </label>
+           <label>Physics
+           <input type="checkbox" name="Physics" value="Physics">
+           </label>
+           <label>Literature
+           <input type="checkbox" name="Literature" value="Literature">
+           </label>
+           <label>Commerce
+           <input type="checkbox" name="Commerce" value="Commerce">
+           </label>
+           <label>Accounting
+           <input type="checkbox" name="Accounting" value="Accounting"><br>
+           </label>
+           <label>History
+           <input type="checkbox" name="History" value="History">
+           </label>
+           <label>Government
+           <input type="checkbox" name="Government" value="Government">
+           </label><br/><br/>
+
+    <h2> Extracurriculum Activities</h2>
+    <h4>sport:choose your house</h4>
+    <label for="blue">blue
+     <input type="radio" id="blue" value="blue" name="blue-red-green-yellow">
+    </label>  
+    <label for="green">green
+     <input type="radio" id="green" value="green" name="blue-red-green-yellow">
+    </label>  
+    <label for="red">red
+     <input type="radio" id="red" value="red" name="blue-red-green-yellow">
+    </label>  
+    <label for="yellow">yellow
+     <input type="radio" id="yellow" value="yellow" name="blue-red-green-yellow">
+    </label>  
+    <br><br>
+    <h2>Select your favourite game</h2>
+    <select name="game" id="game">
+<option name="select" id="select">select</option>
+<option name="Football" id="football">Football</option>
+<option name="volleyball" id="volleyball">Volleyball</option>
+<option name="handball" id="handball">Handball</option>
+<option name="basketball" id="basketball">Basketball</option>
+    </select>
+    <br><br>
+<button>submit</button>
+    </form>
+    </div>
+   </div> 
+</body>
+</html>
